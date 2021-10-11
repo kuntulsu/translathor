@@ -14,4 +14,5 @@ def translate(message):
     reply = f"\"{translator(message.text)}\""
     bot.send_message(message.chat.id, reply,disable_web_page_preview=True)
 
+print("starting bot.")
 bot.infinity_polling()
